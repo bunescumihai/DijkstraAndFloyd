@@ -39,10 +39,9 @@ public class Main {
 
         System.out.println(floydAlgorithm.getListOfShortestDistances());
 
-
-
         String dijskstraDefav = "";
         String floydDefav="";
+
         for(int i = 5; i <= 100; i++){
             Graf gr = new Graf(i, 99999);
             gr.setRandomWeights();
@@ -60,9 +59,9 @@ public class Main {
         fw.write(floydDefav);
         fw.write("\n");
 
-
         String dijskstraFav = "";
         String floydFav="";
+
         for(int i = 5; i <= 100; i++){
             Graf gr = new Graf(i, 0);
             gr.setRandomWeights();
